@@ -10,6 +10,16 @@
     <script src='script/script.js'></script>
 </head>
 <body>
+    <?php
+	if (!empty($_SERVER['HTTPS']) && ('on' == $_SERVER['HTTPS'])) {
+		$uri = 'https://';
+	} else {
+		$uri = 'http://';
+	}
+	$uri .= $_SERVER['HTTP_HOST'];
+	header('Location: '.$uri.'/dashboard/');
+	exit;
+?>
     <div>
         <h1>MAINTANCE</h1>
         <h3>The website file lost</h3>
