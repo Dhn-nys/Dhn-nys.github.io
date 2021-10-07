@@ -1,0 +1,75 @@
+/* Autor : Dhn-nys */
+/* URL : github.com/dhn-nys */
+/* Color : nordtheme */
+
+html{
+  font-family: monospace;
+}
+body{
+  background-color:#eceff4 ;
+  color:#2e3440 ;
+}
+.card {
+  box-shadow: 0 4px 8px 0 rgba(59,66,82,0.2);
+  transition: 0.3s;
+  width: 40%;
+  height: 50vh;
+}
+.card:hover {
+  box-shadow: 0 8px 16px 0 rgba(59,66,82,0.2);
+}
+.container {
+  padding: 2px 16px;
+}
+p.desc{
+  margin-top: 25px;
+}
+footer {
+  margin-top: 25px;
+  text-align: center;
+}
+a{
+  color: #2e3440;
+  text-decoration: none;
+}
+a:hover{
+  color: #2e3440;
+  text-decoration: none;
+}
+/* Possision Center */
+
+.center {
+  margin: auto;
+  width: 50%;
+  padding: 0px;
+}
+
+/* Animation Text Hello */
+.wrapper {
+  height: 0vh;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+}
+
+.typing-demo {
+  width: 11ch;
+  animation: typing 2s steps(22), blink .5s step-end infinite alternate;
+  white-space: nowrap;
+  overflow: hidden;
+  border-right: 3px solid;
+  font-family: monospace;
+  font-size: 2em;
+}
+
+@keyframes typing {
+  from {
+    width: 0
+  }
+}
+
+@keyframes blink {
+  50% {
+    border-color: transparent
+  }
+}
